@@ -6,44 +6,17 @@
 import Foundation
 import Alamofire
 
-struct HiraganaData : Codable {
-    var converted : String
-    let outputType : String
-    var requestID : String
-
-    enum CodingKeys: String, CodingKey {
-        case converted
-        case outputType = "output_type"
-        case requestID = "request_id"
-    }
-}
-
-struct Params: Codable {
-    var appID : String
-    var requestID : String
-    var sentence : String
-    var outputType: String
-
-    enum CodingKeys: String, CodingKey {
-        case appID = "app_id"
-        case requestID = "request_id"
-        case sentence
-        case outputType = "output_type"
-    }
-}
-
 class APIClient {
-    private(set) var postHiragana : String = ""
-    private(set) var params : [String: String]?
+    let appID = "a6a8f8325d8cfe3bd703db817d1a07cba86c76e7bcd4d6cbf906bafaa88bc61e"
+    var postHiragana : String = ""
+    var outputType = "hiragana"
     private var url: String = "https://labs.goo.ne.jp/api/hiragana"
     private var hiragana : HiraganaData?
 
-    func createParams() {
-
-    }
 
     func postData() {
-        AF.request(url, method: .post, parameters: params , encoding: JSONEncoding.default)
+        let params : [String: String] = ["app_id": appID, "sentence": postHiragana, "output_type": outputType]
+        AF.request(url, method: .post, parameters: params , encoding: JSONEncoding.default, headers: nil)
                 .responseJSON
                 { (response) in
                     switch response.result {
@@ -53,7 +26,7 @@ class APIClient {
                         let decoder = JSONDecoder()
                         //ここでデコードしている
                         guard let hiragana = try? decoder.decode(HiraganaData.self, from: data) else { return }
-                        print(hiragana)
+                        print(hiragana.converted)
                             //エラー処理
                     case let .failure(error):
                         print(error)

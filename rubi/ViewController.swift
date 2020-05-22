@@ -9,18 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var api = APIClient()
     @IBOutlet weak var InputViewLabel: UILabel!
     @IBOutlet weak var InputTextField: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
 
     }
     
     @IBAction func RubiButton(_ sender: Any) {
-        
+        api.postHiragana = InputTextField.text!
+        api.postData()
         
     }
     

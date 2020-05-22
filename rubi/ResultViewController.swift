@@ -16,10 +16,9 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var ResultTextField: UITextView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
     
     
