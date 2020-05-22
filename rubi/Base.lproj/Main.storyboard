@@ -25,6 +25,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="RubiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGB-Al-JTa"/>
                                     <segue destination="H7g-Ze-DX0" kind="show" id="07d-MA-xyL"/>
                                 </connections>
                             </button>
@@ -69,6 +70,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="onI-VQ-Ypp"/>
+                    <connections>
+                        <outlet property="InputTextField" destination="o3R-h3-pLf" id="alQ-E1-Lcd"/>
+                        <outlet property="InputViewLabel" destination="BOR-MV-3us" id="6fG-Bj-4h3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +97,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pw5-z3-0o4">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pw5-z3-0o4">
                                 <rect key="frame" x="87" y="212" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -113,7 +118,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sub-4Z-m8g">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sub-4Z-m8g">
                                 <rect key="frame" x="87" y="501" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -150,6 +155,7 @@
                     <connections>
                         <outlet property="InputedTextField" destination="pw5-z3-0o4" id="YQu-4k-CYh"/>
                         <outlet property="ResultLabel" destination="MJq-33-SrJ" id="Ng8-WA-5Le"/>
+                        <outlet property="ResultTextField" destination="Sub-4Z-m8g" id="VgI-yC-P2a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25P-iY-XmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

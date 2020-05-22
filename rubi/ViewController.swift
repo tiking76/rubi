@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var InputViewLabel: UILabel!
+    @IBOutlet weak var InputTextField: UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+
     }
-
-
+    
+    @IBAction func RubiButton(_ sender: Any) {
+        
+        
+    }
+    
+    
 }
 
