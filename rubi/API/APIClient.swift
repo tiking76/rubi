@@ -38,10 +38,6 @@ class APIClient {
     private var url: String = "https://labs.goo.ne.jp/api/hiragana"
     private var hiragana : HiraganaData?
 
-    func createParams() {
-
-    }
-
     func postData() {
         AF.request(url, method: .post, parameters: params , encoding: JSONEncoding.default)
                 .responseJSON
