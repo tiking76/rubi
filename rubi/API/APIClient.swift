@@ -6,27 +6,16 @@
 import Foundation
 import Alamofire
 
-struct HiraganaData : Codable {
-    var converted : String
-    let outputType : String
-    var requestID : String
-
-    enum CodingKeys: String, CodingKey {
-        case converted
-        case outputType = "output_type"
-        case requestID = "request_id"
-    }
-}
-
-
-
 class APIClient {
-    private(set) var postHiragana : String = ""
-    private(set) var params : [String: String]?
+    let appID = "a6a8f8325d8cfe3bd703db817d1a07cba86c76e7bcd4d6cbf906bafaa88bc61e"
+    var postHiragana : String = ""
+    private(set) var convertText : String?
+    var outputType = "hiragana"
     private var url: String = "https://labs.goo.ne.jp/api/hiragana"
     private var hiragana : HiraganaData?
 
     func postData() {
+        let params : [String: String] = ["app_id": appID, "sentence": postHiragana, "output_type": outputType]
         AF.request(url, method: .post, parameters: params , encoding: JSONEncoding.default)
                 .responseJSON
                 { (response) in
@@ -37,7 +26,7 @@ class APIClient {
                         let decoder = JSONDecoder()
                         //ここでデコードしている
                         guard let hiragana = try? decoder.decode(HiraganaData.self, from: data) else { return }
-                        print(hiragana)
+                        self.convertText = hiragana.converted
                             //エラー処理
                     case let .failure(error):
                         print(error)

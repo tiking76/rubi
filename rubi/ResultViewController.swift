@@ -10,7 +10,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    @IBOutlet weak var ResultLabel: UILabel!
+    var argArray : [String]!
     
     @IBOutlet weak var InputedTextField: UITextView!
     
@@ -19,7 +19,8 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        InputedTextField.text = argArray[0]
+        ResultTextField.text = argArray[1]
     }
     
     

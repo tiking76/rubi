@@ -36,7 +36,7 @@
                                 </state>
                                 <connections>
                                     <action selector="RubiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGB-Al-JTa"/>
-                                    <segue destination="H7g-Ze-DX0" kind="show" id="07d-MA-xyL"/>
+                                    <segue destination="H7g-Ze-DX0" kind="show" identifier="toResultView" id="0KB-MJ-elS"/>
                                 </connections>
                             </button>
                         </subviews>
