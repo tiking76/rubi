@@ -18,19 +18,7 @@ struct HiraganaData : Codable {
     }
 }
 
-struct Params: Codable {
-    var appID : String
-    var requestID : String
-    var sentence : String
-    var outputType: String
 
-    enum CodingKeys: String, CodingKey {
-        case appID = "app_id"
-        case requestID = "request_id"
-        case sentence
-        case outputType = "output_type"
-    }
-}
 
 class APIClient {
     private(set) var postHiragana : String = ""

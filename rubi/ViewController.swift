@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     var text : String = ""
     let api = APIClient()
-    @IBOutlet weak var InputViewLabel: UILabel!
     @IBOutlet weak var InputTextField: UITextView!
 
     override func viewDidLoad() {
