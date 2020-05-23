@@ -9,22 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var api = APIClient()
-    @IBOutlet weak var InputViewLabel: UILabel!
+    var text : String = ""
+    let api = APIClient()
     @IBOutlet weak var InputTextField: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        //api.postHiragana = InputTextField.text!
+        api.postData()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    //UITextVieの範囲外をタップしたら閉じる
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        text = InputTextField.text!
+        self.view.endEditing(true)
 
     }
+
     
     @IBAction func RubiButton(_ sender: Any) {
         api.postHiragana = InputTextField.text!
         api.postData()
-        
     }
-    
-    
+
+
 }
 

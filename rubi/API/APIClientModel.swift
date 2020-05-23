@@ -15,4 +15,5 @@ struct HiraganaData : Codable {
         case outputType = "output_type"
         case requestID = "request_id"
     }
+
 }

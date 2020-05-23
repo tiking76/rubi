@@ -19,7 +19,11 @@
                                 <rect key="frame" x="87" y="328" width="240" height="240"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+<<<<<<< HEAD
                                     <constraint firstAttribute="width" secondItem="o3R-h3-pLf" secondAttribute="height" multiplier="1:1" id="5FQ-aB-LSh"/>
+=======
+                                    <constraint firstAttribute="width" secondItem="o3R-h3-pLf" secondAttribute="height" multiplier="1:1" id="2qJ-gS-WUg"/>
+>>>>>>> master
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -28,8 +32,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-xq-j0R">
                                 <rect key="frame" x="184" y="612" width="46" height="46"/>
                                 <constraints>
+<<<<<<< HEAD
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="9au-gR-nIa"/>
                                     <constraint firstAttribute="width" secondItem="xEE-xq-j0R" secondAttribute="height" multiplier="1:1" id="zLj-8J-1lU"/>
+=======
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="S8e-Zs-C0J"/>
+                                    <constraint firstAttribute="width" secondItem="xEE-xq-j0R" secondAttribute="height" multiplier="1:1" id="WOJ-k5-Fp3"/>
+>>>>>>> master
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -42,12 +51,21 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="o3R-h3-pLf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="0c2-uG-iO9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o3R-h3-pLf" secondAttribute="trailing" constant="87" id="Cen-Rs-7yD"/>
                             <constraint firstItem="xEE-xq-j0R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lct-qE-giM"/>
                             <constraint firstItem="o3R-h3-pLf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nln-kn-v42"/>
                             <constraint firstItem="xEE-xq-j0R" firstAttribute="top" secondItem="o3R-h3-pLf" secondAttribute="bottom" constant="44" id="YqM-Fa-9p5"/>
                             <constraint firstItem="o3R-h3-pLf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dlj-fo-wWy"/>
+=======
+                            <constraint firstItem="o3R-h3-pLf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Jq4-vq-MSW"/>
+                            <constraint firstItem="xEE-xq-j0R" firstAttribute="top" secondItem="o3R-h3-pLf" secondAttribute="bottom" constant="44" id="Ojq-AR-EyC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o3R-h3-pLf" secondAttribute="trailing" constant="87" id="e1S-dL-Q5a"/>
+                            <constraint firstItem="o3R-h3-pLf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gvs-BT-cve"/>
+                            <constraint firstItem="o3R-h3-pLf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nPo-Yy-YTa"/>
+                            <constraint firstItem="xEE-xq-j0R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlT-9M-O9J"/>
+>>>>>>> master
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -60,7 +78,11 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
+<<<<<<< HEAD
         <!--結果画面-->
+=======
+        <!--出力画面-->
+>>>>>>> master
         <scene sceneID="xl7-Wq-yJ2">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="H7g-Ze-DX0" customClass="ResultViewController" customModule="rubi" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,8 +94,13 @@
                                 <rect key="frame" x="87" y="212" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+<<<<<<< HEAD
                                     <constraint firstAttribute="width" secondItem="pw5-z3-0o4" secondAttribute="height" multiplier="15:8" id="2um-9A-Me5"/>
                                     <constraint firstAttribute="width" constant="240" id="5vv-wZ-Fp9"/>
+=======
+                                    <constraint firstAttribute="width" constant="240" id="G4a-Eq-IeD"/>
+                                    <constraint firstAttribute="width" secondItem="pw5-z3-0o4" secondAttribute="height" multiplier="15:8" id="S6P-bR-ag0"/>
+>>>>>>> master
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -89,8 +116,13 @@
                                 <rect key="frame" x="87" y="556" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+<<<<<<< HEAD
                                     <constraint firstAttribute="width" constant="240" id="Snn-op-U93"/>
                                     <constraint firstAttribute="width" secondItem="Sub-4Z-m8g" secondAttribute="height" multiplier="15:8" id="k8F-js-zsO"/>
+=======
+                                    <constraint firstAttribute="width" constant="240" id="HTE-BQ-N7Q"/>
+                                    <constraint firstAttribute="width" secondItem="Sub-4Z-m8g" secondAttribute="height" multiplier="15:8" id="ZWO-ad-dWs"/>
+>>>>>>> master
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -99,6 +131,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="EPh-PV-yvi" firstAttribute="centerX" secondItem="MaM-w8-hHj" secondAttribute="centerX" id="P8s-BD-Tfq"/>
                             <constraint firstItem="EPh-PV-yvi" firstAttribute="centerY" secondItem="MaM-w8-hHj" secondAttribute="centerY" id="SyZ-QR-kwb"/>
                             <constraint firstItem="pw5-z3-0o4" firstAttribute="centerX" secondItem="MaM-w8-hHj" secondAttribute="centerX" id="aCS-c5-cL8"/>
@@ -109,6 +142,18 @@
                         <viewLayoutGuide key="safeArea" id="8md-hl-b6x"/>
                     </view>
                     <navigationItem key="navigationItem" title="結果画面" id="Qgt-IC-UrU"/>
+=======
+                            <constraint firstItem="pw5-z3-0o4" firstAttribute="centerX" secondItem="MaM-w8-hHj" secondAttribute="centerX" id="2sQ-2L-RKN"/>
+                            <constraint firstItem="EPh-PV-yvi" firstAttribute="centerY" secondItem="MaM-w8-hHj" secondAttribute="centerY" id="43o-9a-pgo"/>
+                            <constraint firstItem="EPh-PV-yvi" firstAttribute="centerX" secondItem="MaM-w8-hHj" secondAttribute="centerX" id="GqU-nM-xnH"/>
+                            <constraint firstItem="Sub-4Z-m8g" firstAttribute="top" secondItem="EPh-PV-yvi" secondAttribute="bottom" constant="74.5" id="LHn-cl-YTd"/>
+                            <constraint firstItem="Sub-4Z-m8g" firstAttribute="centerX" secondItem="MaM-w8-hHj" secondAttribute="centerX" id="Qye-EF-fyV"/>
+                            <constraint firstItem="EPh-PV-yvi" firstAttribute="top" secondItem="pw5-z3-0o4" secondAttribute="bottom" constant="74.5" id="aCi-Bz-23h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8md-hl-b6x"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="出力画面" id="Qgt-IC-UrU"/>
+>>>>>>> master
                     <connections>
                         <outlet property="InputedTextField" destination="pw5-z3-0o4" id="YQu-4k-CYh"/>
                         <outlet property="ResultTextField" destination="Sub-4Z-m8g" id="VgI-yC-P2a"/>
