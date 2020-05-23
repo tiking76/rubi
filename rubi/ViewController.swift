@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        api.postHiragana = InputTextField.text!
+        //api.postHiragana = InputTextField.text!
         api.postData()
     }
 
