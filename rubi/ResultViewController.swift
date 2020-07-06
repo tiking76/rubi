@@ -12,15 +12,17 @@ class ResultViewController: UIViewController {
 
     var argArray : [String]!
     
-    @IBOutlet weak var InputedTextField: UITextView!
+    @IBOutlet weak var InputtedTextField: UITextView!
     
     @IBOutlet weak var ResultTextField: UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        InputedTextField.text = argArray[0]
+        InputtedTextField.text = argArray[0]
+        print(InputtedTextField.text)
         ResultTextField.text = argArray[1]
+        print(ResultTextField.text)
     }
     
     

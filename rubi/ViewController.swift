@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     var text : String = ""
     var convertedText : String = ""
     let api = APIClient()
+    
     @IBOutlet weak var InputTextField: UITextView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,8 +27,6 @@ class ViewController: UIViewController {
 
     //UITextVieの範囲外をタップしたら閉じる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        text = InputTextField.text!
-        textArray[0] = text
         self.view.endEditing(true)
     }
 
@@ -38,13 +37,20 @@ class ViewController: UIViewController {
         }
     }
 
+
+
     @IBAction func RubiButton(_ sender: Any) {
-        api.postHiragana = text
-        api.postData()
-        convertedText = api.convertText ?? ""
-        textArray[1] = convertedText
-        InputTextField.text = ""
-        convertedText = ""
+        text = InputTextField.text!
+        textArray[0] = text
+        api.postText = text
+        api.postData { (str) in
+            DispatchQueue.main.async {
+                self.convertedText = str
+                self.textArray[1] = self.convertedText
+                self.InputTextField.text = ""
+                self.convertedText = ""
+            }
+        }
     }
 }
 

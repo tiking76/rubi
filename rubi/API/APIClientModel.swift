@@ -4,7 +4,7 @@
 //
 
 import Foundation
-struct HiraganaData : Codable {
+struct returnDataType : Codable {
     var converted : String
     let outputType : String
     var requestID : String

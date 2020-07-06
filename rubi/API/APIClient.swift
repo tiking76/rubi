@@ -6,16 +6,15 @@
 import Foundation
 import Alamofire
 
-class APIClient {
-    let appID = "a6a8f8325d8cfe3bd703db817d1a07cba86c76e7bcd4d6cbf906bafaa88bc61e"
-    var postHiragana : String = ""
-    private(set) var convertText : String?
+final class APIClient : APIModel {
+    var appID: String = "a6a8f8325d8cfe3bd703db817d1a07cba86c76e7bcd4d6cbf906bafaa88bc61e"
+    var postText : String = ""
     var outputType = "hiragana"
     private var url: String = "https://labs.goo.ne.jp/api/hiragana"
-    private var hiragana : HiraganaData?
+    private var hiragana : returnDataType?
 
-    func postData() {
-        let params : [String: String] = ["app_id": appID, "sentence": postHiragana, "output_type": outputType]
+    func postData(complicationHandler: @escaping (String) -> Void) {
+        let params : [String: String] = ["app_id": appID, "sentence": postText, "output_type": outputType]
         AF.request(url, method: .post, parameters: params , encoding: JSONEncoding.default)
                 .responseJSON
                 { (response) in
@@ -25,8 +24,8 @@ class APIClient {
                         guard let data = response.data else { return }
                         let decoder = JSONDecoder()
                         //ここでデコードしている
-                        guard let hiragana = try? decoder.decode(HiraganaData.self, from: data) else { return }
-                        self.convertText = hiragana.converted
+                        guard let returnText = try? decoder.decode(returnDataType.self, from: data) else { return }
+                        complicationHandler(returnText.converted)
                             //エラー処理
                     case let .failure(error):
                         print(error)
