@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     var textArray : [String] = ["",""]
     var text : String = ""
-    var convertedText : String = ""
     let api = APIClient()
     
     @IBOutlet weak var InputTextField: UITextView!
@@ -45,10 +44,8 @@ class ViewController: UIViewController {
         api.postText = text
         api.postData { (str) in
             DispatchQueue.main.async {
-                self.convertedText = str
-                self.textArray[1] = self.convertedText
+                self.textArray[1] = str
                 self.InputTextField.text = ""
-                self.convertedText = ""
             }
         }
     }
