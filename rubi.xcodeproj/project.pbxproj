@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		115AD6092475CEFE009C8F88 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AD6082475CEFE009C8F88 /* ResultViewController.swift */; };
+		1174A19624C1B15400E951CD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174A19524C1B15400E951CD /* ViewModel.swift */; };
 		119F411124AEFB8E00D73E5D /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F411024AEFB8E00D73E5D /* APIModel.swift */; };
 		11EC15F12472071A0080247A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC15F02472071A0080247A /* AppDelegate.swift */; };
 		11EC15F32472071A0080247A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC15F22472071A0080247A /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		00BC655AA4748B0C06E50D66 /* Pods-rubi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubi.debug.xcconfig"; path = "Target Support Files/Pods-rubi/Pods-rubi.debug.xcconfig"; sourceTree = "<group>"; };
 		115AD6082475CEFE009C8F88 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1174A19524C1B15400E951CD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		119F411024AEFB8E00D73E5D /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		11EC15ED2472071A0080247A /* rubi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rubi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EC15F02472071A0080247A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				11EC15F42472071A0080247A /* ViewController.swift */,
 				11EC15F62472071A0080247A /* Main.storyboard */,
 				115AD6082475CEFE009C8F88 /* ResultViewController.swift */,
+				1174A19524C1B15400E951CD /* ViewModel.swift */,
 				11EC15F92472071C0080247A /* Assets.xcassets */,
 				11EC15FB2472071C0080247A /* LaunchScreen.storyboard */,
 				11EC15FE2472071C0080247A /* Info.plist */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119F411124AEFB8E00D73E5D /* APIModel.swift in Sources */,
+				1174A19624C1B15400E951CD /* ViewModel.swift in Sources */,
 				115AD6092475CEFE009C8F88 /* ResultViewController.swift in Sources */,
 				11EC15F52472071A0080247A /* ViewController.swift in Sources */,
 				11EC15F12472071A0080247A /* AppDelegate.swift in Sources */,
