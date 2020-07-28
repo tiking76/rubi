@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         configureGradientLayer()
         configButton()
         configTextField()
-        self.inputTextView.placeHolder = "ここに変換したい漢字をいれてね"
     }
 
     override func didReceiveMemoryWarning() {
