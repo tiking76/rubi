@@ -7,7 +7,7 @@ import Foundation
 import Alamofire
 
 final class APIClient : APIModel {
-    var appID: String = "a6a8f8325d8cfe3bd703db817d1a07cba86c76e7bcd4d6cbf906bafaa88bc61e"
+    var appID : String = "a6a8f8325d8cfe3bd703db817d1a07cba86c76e7bcd4d6cbf906bafaa88bc61e"
     var postText : String = ""
     var outputType = "hiragana"
     private var url: String = "https://labs.goo.ne.jp/api/hiragana"

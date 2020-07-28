@@ -45,8 +45,15 @@ class ResultViewController: UIViewController {
     
     func configButton() {
         view.addSubview(backHomeButton)
+        backHomeButton.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+        backHomeButton.tintColor = .white
         backHomeButton.setTitle("Home", for: .normal)
         backHomeButton.addTarget(self, action: #selector(backHome), for: .touchUpInside)
+        backHomeButton.frame = CGRect(x: (self.view.frame.size.width / 2) - 150,
+                                      y: (self.view.frame.size.height / 2) - 50,
+                                      width: 100,
+                                      height: 100)
+        backHomeButton.layer.cornerRadius = 10.0
     }
     
     func configTextField() {
