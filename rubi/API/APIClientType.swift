@@ -6,14 +6,14 @@
 import Foundation
 
 enum RequestType {
-  case postData(app_id : Int, sentence : String, output_type : String)
+    case postData(app_id : Int, sentence : String, output_type : String)
 
-  var path : String {
-    switch self {
-    case .postData:
-      return ""
+    var path : String {
+        switch self {
+        case .postData:
+            return ""
+        }
     }
-  }
 
 
 }
