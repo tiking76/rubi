@@ -4,6 +4,7 @@
 //
 
 import Foundation
+
 struct returnDataType : Codable {
     var converted : String
     let outputType : String

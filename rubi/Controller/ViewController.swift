@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     private var viewModel = mainviewModel()
     
-    private var text : String = ""
+    private var text : String?
     private let api = APIClient()
     
     
@@ -44,8 +44,8 @@ class ViewController: UIViewController {
         let nextView = storyboard.instantiateViewController(withIdentifier: "resultView") as! ResultViewController
         showLoader(true)
         text = inputTextView.text!
-        nextView.context = text
-        api.postText = text
+        nextView.context = text ?? ""
+        api.postText = text ?? ""
         api.postData { (str) in
             DispatchQueue.main.async {
                 nextView.resText = str
